@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <main class="container">
+    <form id="contactForm" novalidate>
+      <h1>Contact Us</h1>
+
+      
+      <div class="field">
+        <label for="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+        />
+        <small class="error"></small>
+      </div>
+
+      
+      <div class="field">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="e.g. Praveen@example.com"
+        />
+        <small class="error"></small>
+      </div>
+
+     
+      <div class="field">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="">--Choose your country--</option>
+          <option value="Japan">Japan</option>
+          <option value="India">India</option>
+          <option value="USA">USA</option>
+        </select>
+        <small class="error"></small>
+      </div>
+
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="4"
+          placeholder="Write your message (min 10 chars)"
+        ></textarea>
+        <small class="error"></small>
+      </div>
+
+      
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+</body>
+</html>
